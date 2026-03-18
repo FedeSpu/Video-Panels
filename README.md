@@ -1,1 +1,1 @@
-# video-mme.github.io
+# video-panels.github.io
