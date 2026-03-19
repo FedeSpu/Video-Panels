@@ -65,12 +65,12 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models">
+          <!-- <a class="navbar-item" href="https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models">
             <b>MME</b> 
           </a>
           <a class="navbar-item" href="https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models">
             <b>Awesome-MLLM</b> 
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -93,8 +93,8 @@
           </h2>
           
           <div class="is-size-5 publication-authors", style="width: 80%; margin: 20px auto;", >
-            <span class="author-block", style="font-size:24px"><a href="https://larsdoorenbos.github.io/">Lars Doorenbos</a></span>
-            <span class="author-block", style="font-size:24px"><a href="https://github.com/FedeSpu">Federico Spurio</a></span>
+            <span class="author-block", style="font-size:24px"><a href="https://larsdoorenbos.github.io/">Lars Doorenbos</a></span>*, 
+            <span class="author-block", style="font-size:24px"><a href="https://github.com/FedeSpu">Federico Spurio</a></span>*, 
             <span class="author-block", style="font-size:24px"><a href="https://pages.iai.uni-bonn.de/gall_juergen/">Juergen Gall</a></span>
 
         </div>
@@ -174,7 +174,19 @@
             Further analysis indicates that <strong>subtitle and audio information could significantly enhance video understanding</strong>. 
             Besides, <strong>a decline in MLLM performance is observed as video duration increases for all models</strong>. 
             Our dataset along with these findings underscores the need for further improvements in handling longer sequences and multi-modal data, shedding light on future MLLM development. -->
-
+            Recent Video-Language Models (VLMs) achieve promising results on long-video understanding, 
+            but their performance still lags behind that achieved on tasks involving images or short videos. 
+            This has led to great interest in improving the long context modeling of VLMs by introducing novel modules and additional complexity. 
+            In this paper, we take a different approach: rather than fine-tuning VLMs with the limited data available, 
+            we attempt to maximize the performance of existing models. 
+            To this end, we propose a novel visual prompting strategy specifically designed for long-video understanding. 
+            By combining multiple frames as panels into one image, we effectively trade off spatial details for temporal resolution.
+            Our approach is training-free, parameter-free, and model-agnostic, and can be
+            seamlessly integrated into existing VLMs. 
+            Extensive experiments on five established benchmarks across a wide range of model architectures, sizes, and context
+            windows confirm the consistency of our approach. For the TimeScope (Long) dataset, which has the longest videos, 
+            the accuracy for video question answering is improved by up to 19.4%. Overall, our method raises the bar for long video
+            understanding models.
         </div>
       </div>
     </div>
@@ -576,6 +588,7 @@
 </section>
 
 <!-- DATASET SECTION -->
+ <!--
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
   <h1 class="title is-1 mathvista_other">
@@ -599,7 +612,6 @@
 
               <img src="static/images/highlight_video/VFntoBRGF1A.png" style="width: 95%;"/>
               <p style="margin-bottom: 30px;">🔗 Full Video Link:&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=VFntoBRGF1A">https://www.youtube.com/watch?v=VFntoBRGF1A</a></p>
-              <!-- <p style="margin-bottom: 30px;">🔗<a href="https://www.youtube.com/watch?v=VFntoBRGF1A">Full Video Link</a></p> -->
             
             </div>
           
@@ -639,7 +651,6 @@
         <div class="content has-text-centered">
           <h2 class="title is-3" style="margin-top: 30px;">Benchmark Statistics</h2>
           
-          <!-- bing tu -->
           <div class="container-wrapper">
             <div id="container"></div>
             <div id="image-container">
@@ -679,10 +690,10 @@
     </div>
     
   </div>
-</section>
+</section> -->
 
 <!-- RESULTS SECTION -->
-<section class="hero is-light is-small">
+<!-- <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
     <h1 class="title is-1 mathvista_other">Experiment Results</h1>
   </div>
@@ -783,7 +794,7 @@
 
 
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
