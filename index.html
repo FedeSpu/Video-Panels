@@ -32,6 +32,7 @@
   <script src="./static/js/leaderboard_testmini.js"></script>  
   <script src="./data/results/output_folders.js" defer></script>
   <script src="./data/results/model_scores.js" defer></script>
+  <script src="./data/results/model_papers.js" defer></script>
 
   <script src="./visualizer/data/data_public.js" defer></script>
 
@@ -208,6 +209,19 @@
   }
 </script>
 
+<!-- Teaser image inserted below Introduction and before Leaderboard -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters has-text-centered">
+        <figure class="image is-3by1" style="margin-bottom: 6vh;">
+          <img src="static/images/Teaser-VP.png" alt="Teaser — Video Panels" style="max-width:100%; height:auto; border-radius:6px;"/>          
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
@@ -219,11 +233,11 @@
           </p>
           <div class="video-duration">
             <p>
-              <strong>Avg. Duration (s):</strong>
-              VMME Medium: 516 &nbsp;&nbsp;&nbsp;&nbsp;
-              VMME Long: 2467 &nbsp;&nbsp;&nbsp;&nbsp;
-              TimeScope Short: 2586 &nbsp;&nbsp;&nbsp;&nbsp;
-              TimeScope Long: 27600
+              <!-- <strong>Avg. Duration (min):</strong> -->
+              <strong>VMME Medium:</strong> ~8min 30s &nbsp;&nbsp;&nbsp;&nbsp;
+              <strong>VMME Long:</strong> ~41min &nbsp;&nbsp;&nbsp;&nbsp;
+              <strong>TimeScope Short:</strong> ~43min &nbsp;&nbsp;&nbsp;&nbsp;
+              <strong>TimeScope Long:</strong> ~7h 40min
             </p>
             <p>
               By default, this leaderboard is sorted by the Average score. To view other sorted results, please click on the corresponding header.
@@ -319,7 +333,7 @@
               </tr>
               <tr>
                 <td style="vertical-align: middle;">5</td>
-                <td style="text-align: left;"><b>LLaVA-OV 0.5B</b></td>
+                <td style="text-align: left;"><b>LLaVA-OneVision 0.5B</b></td>
                 <td style="vertical-align: middle;">32</td>
                 <td style="vertical-align: middle;">40.9</td>
                 <td style="vertical-align: middle;"><b>37.0</b></td>
@@ -328,7 +342,7 @@
                 <td style="vertical-align: middle;">25.6</td>
                 <td style="vertical-align: middle;"><b>44.0</b></td>
                 <td style="vertical-align: middle;">50.1</td>
-                <td style="vertical-align: middle;">39.8</td>666
+                <td style="vertical-align: middle;">39.8</td>
                 <td style="vertical-align: middle;">42.1</td>                                 
               </tr>
               <tr style="background-color: #fcfcfc;">
@@ -347,7 +361,7 @@
               </tr>
               <tr>
                 <td style="vertical-align: middle;">7</td>
-                <td style="text-align: left;"><b>LLaVA-OV 7B</b></td>
+                <td style="text-align: left;"><b>LLaVA-OneVision 7B</b></td>
                 <td style="vertical-align: middle;">32</td>
                 <td style="vertical-align: middle;"><b>56.7</b></td>
                 <td style="vertical-align: middle;">48.8</td>
@@ -375,7 +389,7 @@
               </tr>
               <tr>
                 <td style="vertical-align: middle;">9</td>
-                <td style="text-align: left;"><b>LLaVA-OV 72B</b></td>
+                <td style="text-align: left;"><b>LLaVA-OneVision 72B</b></td>
                 <td style="vertical-align: middle;">32</td>
                 <td style="vertical-align: middle;">62.9</td>
                 <td style="vertical-align: middle;">57.6</td>
@@ -440,7 +454,7 @@
                 <td style="vertical-align: middle;">34.7</td>
                 <td style="vertical-align: middle;"><b>66.2</b></td>
                 <td style="vertical-align: middle;">52.8</td>
-                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-*</td>
                 <td style="vertical-align: middle;">56.6</td>                                 
               </tr>
               <tr style="background-color: #fcfcfc;">
@@ -454,7 +468,7 @@
                 <td style="vertical-align: middle;"><b>39.3</b></td>
                 <td style="vertical-align: middle;">66.0</td>
                 <td style="vertical-align: middle;"><b>54.4</b></td>
-                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-*</td>
                 <td style="vertical-align: middle;"><b>60.7</b> <span style="color: #22a56e; font-size: 12px;">(+4.1)</span></td>                                 
               </tr>
               <tr>
@@ -468,7 +482,7 @@
                 <td style="vertical-align: middle;"><b>30.9</b></td>
                 <td style="vertical-align: middle;">52.9</td>
                 <td style="vertical-align: middle;">58.2</td>
-                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-*</td>
                 <td style="vertical-align: middle;">55.4</td>                                 
               </tr>
               <tr style="background-color: #fcfcfc;">
@@ -482,7 +496,7 @@
                 <td style="vertical-align: middle;"><b>30.9</b></td>
                 <td style="vertical-align: middle;"><b>54.4</b></td>
                 <td style="vertical-align: middle;"><b>59.9</b></td>
-                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-*</td>
                 <td style="vertical-align: middle;"><b>58.2</b> <span style="color: #22a56e; font-size: 12px;">(+2.8)</span></td>                                 
               </tr>
 
@@ -500,7 +514,7 @@
                 <td style="vertical-align: middle;">23.8</td>
                 <td style="vertical-align: middle;">65.7</td>
                 <td style="vertical-align: middle;">54.3</td>
-                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-*</td>
                 <td style="vertical-align: middle;">54.5</td>                                 
               </tr>
               <tr style="background-color: #fcfcfc;">
@@ -514,7 +528,7 @@
                 <td style="vertical-align: middle;"><b>26.7</b></td>
                 <td style="vertical-align: middle;"><b>65.8</b></td>
                 <td style="vertical-align: middle;"><b>56.7</b></td>
-                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-*</td>
                 <td style="vertical-align: middle;"><b>56.7</b> <span style="color: #22a56e; font-size: 12px;">(+2.2)</span></td>                                 
               </tr>
               <tr>
@@ -528,7 +542,7 @@
                 <td style="vertical-align: middle;"><b>37.6</b></td>
                 <td style="vertical-align: middle;">66.7</td>
                 <td style="vertical-align: middle;">54.2</td>
-                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-*</td>
                 <td style="vertical-align: middle;">59.7</td>                                 
               </tr>
               <tr style="background-color: #fcfcfc;">
@@ -542,7 +556,7 @@
                 <td style="vertical-align: middle;">35.6</td>
                 <td style="vertical-align: middle;"><b>66.8</b></td>
                 <td style="vertical-align: middle;"><b>54.8</b></td>
-                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-*</td>
                 <td style="vertical-align: middle;"><b>60.5</b> <span style="color: #22a56e; font-size: 12px;">(+0.8)</span></td>                                 
               </tr>
               <tr>
@@ -556,7 +570,7 @@
                 <td style="vertical-align: middle;">39.1</td>
                 <td style="vertical-align: middle;"><b>47.3</b></td>
                 <td style="vertical-align: middle;"><b>58.9</b></td>
-                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-*</td>
                 <td style="vertical-align: middle;">58.2</td>                                 
               </tr>
               <tr style="background-color: #fcfcfc;">
@@ -570,19 +584,85 @@
                 <td style="vertical-align: middle;"><b>46.7</b></td>
                 <td style="vertical-align: middle;">47.1</td>
                 <td style="vertical-align: middle;">58.3</td>
-                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-*</td>
                 <td style="vertical-align: middle;"><b>60.9</b> <span style="color: #22a56e; font-size: 12px;">(+2.7)</span></td>                                 
               </tr>
             </tbody>                                                                           
           </table>
 
+          <script>
+            // Replace model names in the leaderboard with links to their papers when available.
+            document.addEventListener('DOMContentLoaded', function() {
+              if (!window.modelPapers) return;
+              const table = document.querySelector('#results');
+              if (!table) return;
+              const rows = table.querySelectorAll('tbody tr');
+              rows.forEach(row => {
+                const modelCell = row.querySelector('td:nth-child(2)');
+                if (!modelCell) return;
+                const name = modelCell.innerText.trim();
+                const url = window.modelPapers[name];
+                if (url) {
+                  // Wrap the existing HTML in an anchor
+                  const html = modelCell.innerHTML;
+                  modelCell.innerHTML = `<a href="${url}" target="_blank" rel="noopener">${html}</a>`;
+                }
+              });
+            });
+          </script>
           <p style="text-align: left; font-size: 14px; margin-top: 15px;">
             * Since the videos of VNBench are very short, we evaluate only VLMs with up to 32 frames context on it.<br>
-            * Our method improves the baseline results in nearly all cases and on average across all VLMs.
+            Our method improves the baseline results in nearly all cases and on average across all VLMs.
           </p>
 
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mathvista_other">Ablations</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="has-text-centered" style="margin-bottom: 30px;">  
+      <h2 class="title is-3">Performance as Function of Video Duration</h2>
+      <p style="font-size: large;">Video Panels consistently improves accuracy on longer videos</p>
+    </div>
+    <div class="columns is-vcentered is-centered">
+      <div class="column is-half has-text-centered">
+        <figure class="image">
+          <img src="static/images/ts_vid_llama.png" alt="TS Video LLaMA" style="width:100%; max-width:900px; height:auto; border-radius:6px;"/>
+          <figcaption style="margin-top:0.5rem; font-size:16px; color:#555;">(a) TimeScope — VideoLLaMA 3 7B</figcaption>
+        </figure>
+      </div>
+      <div class="column is-half has-text-centered">
+        <figure class="image">
+          <img src="static/images/ts_vid.png" alt="TS Video" style="width:100%; max-width:900px; height:auto; border-radius:6px;"/>
+          <figcaption style="margin-top:0.5rem; font-size:16px; color:#555;">(b) TimeScope — LLaVA-Video 7B</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="has-text-centered" style="margin-bottom: 30px;">  
+      <h2 class="title is-3">Effects of the Number of Panels</h2>
+      <p style="font-size: large;">Different combinations of number of panels for LLaVA-OneVision 7B</p>
+    </div>
+    <div class="columns is-vcentered is-centered">
+      
+      <figure class="image">
+        <img src="static/images/panels_ablation.png" alt="TS Video LLaMA" style="width:100%; max-width:900px; height:auto; border-radius:6px;"/>
+        <!-- <figcaption style="margin-top:0.5rem; font-size:16px; color:#555;">(a) TimeScope — VideoLLaMA 3 7B</figcaption> -->
+      </figure>
+      
     </div>
   </div>
 </section>
@@ -753,14 +833,14 @@
 
   </div>
 </section>
-
+-->
 
 </section>
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
     <h1 class="title is-1 mathvista_other" id="citation">Citation</h1>
   </div>
-</section> -->
+</section> 
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
