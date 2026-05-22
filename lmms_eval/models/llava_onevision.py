@@ -90,6 +90,7 @@ class Llava_OneVision(lmms):
         video_decode_backend: str = "decord",
         panel_width: Optional[int] = 2,
         panel_height: Optional[int] = 2,
+        fps_limit: Optional[int] = 1,
         border_px: Optional[int] = 0,
         verbose: Optional[bool] = False,
         plot_video: Optional[bool] = False,
@@ -114,7 +115,7 @@ class Llava_OneVision(lmms):
         assert video_decode_backend == "decord", f"Unsupported video decode backend for paneling: {video_decode_backend}"
         self.panel_width = panel_width
         self.panel_height = panel_height
-        self.fps_limit = 1
+        self.fps_limit = fps_limit
         self.border_px = border_px
 
         self.verbose = verbose
