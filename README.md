@@ -47,7 +47,7 @@ Click on the filenames below to jump directly to the source code:
 
 Inside the **[`lmms_eval/models/`](./lmms_eval/models/)** directory, we provide examples for integrating with [`lmms-eval`](https://github.com/EvolvingLMMs-Lab/lmms-eval) (branch `8895505b3fb087bdfc91cb5f0a1b3a6a6a0c0914`):
 
-*   **[`llava_onevision.py`](./lmms_eval/models/llava_onevision.py)**: Example integration for evaluating the LLaVA OneVision model.
+*   **[`llava_onevision.py`](./lmms_eval/models/llava_onevision.py)**: Example integration for evaluating the [LLaVA OneVision](https://github.com/LLaVA-VL/LLaVA-NeXT) (branch `bcba57a8441d74dd81636a8364953b47b5f1e9be`) model. 
 
 ## Usage
 
